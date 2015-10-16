@@ -1,0 +1,68 @@
+p.plink {
+    text-align: center;
+}
+
+
+
+
+.navbar-default {
+    background-color: thistle;
+}
+
+.profile-label {
+    font-weight: bold;
+}
+.profile-desc {
+    width: 330px;
+}
+
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+    border: none;
+}
+
+.main-menu {
+      position: absolute;
+      right: 10px;
+}
+
+.front-img {
+    margin: 10px 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.waterfall-fin {
+    width: 100px;
+    border: 8px solid #eee;
+    border-radius: 10px;
+    margin: 0px 5px 0px;
+}
+.TitleFont {
+    font-family: 'THCharmonman';
+}
+.row {
+    width: 80%;
+  margin-left: 20%;
+}
+
+.taglist {
+    display: block;
+    background-color: #dca7a7;
+    width: 89%;
+    height: 40px;
+    border-radius: 10px;
+    margin:0 auto 15px;
+
+}
+.tag{
+    display: inline;
+    margin: 0 10px 0;
+    vertical-align: text-bottom;
+    
+    
+}
+
+.tag-ul {
+    margin-top: 15px;
+    padding-top: 10px
+}

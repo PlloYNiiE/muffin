@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Muffin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>   
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="images/icon5.ico" rel="shortcut icon">
+    </head>
+
+
+    <body background="images/5.jpg">
+
+        <section data-role="page" id="gallery">
+            <header data-role="header" data-add-back-btm="true">
+                <h1>Gallery</h1>
+                
+                <a href="#myPopupDialog" data-role="button" data-inline="true" data-iconpos="right" data-icon="user"
+                   data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-right">log in</a>
+            </header>
+
+            <a href="hello.php" data-role="button" data-ajax="false"> php </a>
+
+            <div data-role="content"> 
+                <div class="taglist">
+                    <ul class="tag-ul">
+                        <li class="tag">Enfant</li>
+                        <li class="tag">eating</li>
+                        <li class="tag">standing</li>
+                        <li class="tag">Funny</li>
+                        <li class="tag">Enfant</li>
+                        <li class="tag">eating</li>
+                        <li class="tag">standing</li>
+                        <li class="tag">Funny</li>
+                        <li class="tag">Enfant</li>
+                        <li class="tag">eating</li>
+                        <li class="tag">standing</li>
+
+                    </ul>
+
+                </div>
+                <div id="main" class="container">
+                    <div class="waterfall" data-col-min-width="240" data-default-container-width="800" data-autoresize="true"> 
+                        <img src="images/muffin/1380687_10201364718934770_960534105_n.jpg"  class="waterfall-fin">  
+                        <img src="images/muffin/cap1.PNG"  class="waterfall-fin"> 
+                        <img src="images/muffin/2.jpg"  class="waterfall-fin"> 
+                        <img src="images/muffin/10537108_10205002950848294_4441447068061270501_n.jpg"  class="waterfall-fin">  
+                        <img src="images/muffin/1.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/10891801_10204504330183089_752277378957325811_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/933996_10200512311865126_249524192_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/front1.JPG"  class="waterfall-fin">
+                        <img src="images/muffin/3.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/cap3.PNG"  class="waterfall-fin">
+                        <img src="images/muffin/91.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/99.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/97.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/96.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/10891801_10204504330183089_752277378957325811_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/933996_10200512311865126_249524192_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/front1.JPG"  class="waterfall-fin">
+                        <img src="images/muffin/front2.JPG"  class="waterfall-fin">
+                        <img src="images/muffin/10891801_10204504330183089_752277378957325811_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/933996_10200512311865126_249524192_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/front1.JPG"  class="waterfall-fin">
+                        <img src="images/muffin/cap3.PNG"  class="waterfall-fin">
+                        <img src="images/muffin/10891801_10204504330183089_752277378957325811_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/933996_10200512311865126_249524192_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/cap4.PNG"  class="waterfall-fin">
+
+                        <img src="images/muffin/21245_10205117370268708_2947651232681397440_n.jpg"  class="waterfall-fin">
+                        <img src="images/muffin/10882234_10204462921187890_862813193555856262_n.jpg"  class="waterfall-fin">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-role="popup" id="myPopupDialog">
+                <div data-role="header">
+                    <h1>Log in</h1>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                </div>
+
+                <div data-role="main" class="ui-content">
+                    <label for="basic">Username:</label>
+                    <input type="text" name="name" id="basic" data-mini="true" />
+                    <label for="basic">Password:</label>
+                    <input type="password" name="name" id="basic" data-mini="true" />
+
+                </div>
+            </div>
+
+
+            <footer data-role="footer" data-position="fixed">
+                <h1>powered by พิราภา ศิรวุฒินานนท์</h1>
+            </footer>  
+
+        </section>
+        
+        
+        
+<!--        <script type="text/javascript">
+     var serviceUrl = "http://localhost/muffin_services/PictureList.php";
+     var test;
+                
+     $(document).on('pageshow', "#gallery", function () {
+         $.getJSON(serviceURL, function (data) {
+             $("#picture").remove();
+             test = data.items;
+                     $.each(test, function (index, pic){
+                     $("#test").append("<li><a>" + pic.pic_name );
+                                
+                 });
+                 $("#test").listview("refresh");
+                            
+
+     })});
+        </script>-->
+
+
+       
+        <script src="js/zepto.js"></script>
+        <script src="js/jquery.waterfall.js"></script>
+    </body>
+</html>
+ 
+        
